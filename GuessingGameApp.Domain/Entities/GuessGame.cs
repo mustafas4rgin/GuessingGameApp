@@ -12,4 +12,6 @@ public class GuessGame : EntityBase
     //navigation properties
     public Day Day { get; set; } = null!;
     public GuessGameResult GuessGameResult { get; set; } = null!;
+    public ICollection<UserGameRel> Users { get; set; } = null!;
+
 }

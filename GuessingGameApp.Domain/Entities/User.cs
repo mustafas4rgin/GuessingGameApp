@@ -11,5 +11,6 @@ public class User : EntityBase
     public byte[] PasswordHash { get; set; } = null!;
     public byte[] PasswordSalt { get; set; } = null!;
     //navigation properties
-    public ICollection<Role> Roles { get; set; } = null!;
+    public ICollection<UserRole> Roles { get; set; } = null!;
+    public ICollection<UserGameRel> Games { get; set; } = null!;
 }

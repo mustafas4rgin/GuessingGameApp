@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGameApp.Domain", "GuessingGameApp.Domain\GuessingGameApp.Domain.csproj", "{6F48F099-610C-46DB-BF0C-33A279535E4D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGameApp.Data", "GuessingGameApp.Data\GuessingGameApp.Data.csproj", "{147049AA-30F2-4C3B-889A-51C9C7F54B09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{6F48F099-610C-46DB-BF0C-33A279535E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F48F099-610C-46DB-BF0C-33A279535E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F48F099-610C-46DB-BF0C-33A279535E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147049AA-30F2-4C3B-889A-51C9C7F54B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147049AA-30F2-4C3B-889A-51C9C7F54B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147049AA-30F2-4C3B-889A-51C9C7F54B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147049AA-30F2-4C3B-889A-51C9C7F54B09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

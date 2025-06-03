@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGameApp.Domain", "G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGameApp.Data", "GuessingGameApp.Data\GuessingGameApp.Data.csproj", "{147049AA-30F2-4C3B-889A-51C9C7F54B09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGameApp.Application", "GuessingGameApp.Application\GuessingGameApp.Application.csproj", "{FBD6759E-829C-4BB8-9F24-70479A329692}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{147049AA-30F2-4C3B-889A-51C9C7F54B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{147049AA-30F2-4C3B-889A-51C9C7F54B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{147049AA-30F2-4C3B-889A-51C9C7F54B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBD6759E-829C-4BB8-9F24-70479A329692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBD6759E-829C-4BB8-9F24-70479A329692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBD6759E-829C-4BB8-9F24-70479A329692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBD6759E-829C-4BB8-9F24-70479A329692}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

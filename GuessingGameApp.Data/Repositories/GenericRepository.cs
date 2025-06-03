@@ -1,5 +1,6 @@
 using GuessingGameApp.Data.Contexts;
 using GuessingGameApp.Domain.Contracts;
+using Microsoft.EntityFrameworkCore;
 
 namespace GuessingGameApp.Data.Repositories;
 
@@ -10,23 +11,21 @@ public class GenericRepository<T> : IGenericRepository<T> where T : EntityBase
     {
         _context = context;
     }
-    public IQueryable<T?> GetAll()
+    public IQueryable<T> GetAll()
     {
-        return _context.Set<T>();
+        return _context.Set<T>().Where(e => !e.IsDeleted);
     }
     public async Task<T?> GetByIdAsync(int id)
     {
         var entity = await _context.Set<T>().FindAsync(id);
 
-        if (entity is null)
+        if (entity is null || entity.IsDeleted)
             return null;
 
         return entity;
     }
     public async Task<T?> AddEntityAsync(T entity)
     {
-        entity.Id = default;
-
         if (entity is null)
             return null;
 
@@ -37,16 +36,36 @@ public class GenericRepository<T> : IGenericRepository<T> where T : EntityBase
     }
     public async Task<T?> UpdateEntityAsync(T entity)
     {
-        entity.Id = default;
+        var exists = await _context.Set<T>().AnyAsync(e => e.Id == entity.Id && !e.IsDeleted);
+        if (!exists) return null;
 
-        var dbEntity = await _context.Set<T>().FindAsync(entity.Id);
+        entity.UpdatedAt = DateTime.UtcNow;
+        _context.Update(entity);
 
-        if (dbEntity is null)
-            return null;
+        return entity;
+    }
+    public async Task<T?> DeleteEntityAsync(T entity)
+    {
+        var exists = await _context.Set<T>().AnyAsync(e => e.Id == entity.Id && !e.IsDeleted);
 
-        _context.Set<T>().Update(dbEntity);
+        if (!exists) return null;
 
-        return dbEntity;
+        _context.Remove(entity);
+
+        return entity;
+    }
+    public async Task<T?> SoftDeleteEntityAsync(T entity)
+    {
+        var exists = await _context.Set<T>().AnyAsync(e => e.Id == entity.Id && !e.IsDeleted);
+
+        if (!exists) return null;
+
+        entity.IsDeleted = true;
+        entity.DeletedAt = DateTime.UtcNow;
+
+        _context.Update(entity);
+
+        return entity;
     }
     public async Task SaveChangesAsync()
     {

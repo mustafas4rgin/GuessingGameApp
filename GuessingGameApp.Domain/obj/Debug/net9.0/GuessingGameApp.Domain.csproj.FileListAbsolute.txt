@@ -1,0 +1,12 @@
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Domain/bin/Debug/net9.0/GuessingGameApp.Domain.deps.json
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Domain/bin/Debug/net9.0/GuessingGameApp.Domain.dll
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Domain/bin/Debug/net9.0/GuessingGameApp.Domain.pdb
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Domain/obj/Debug/net9.0/GuessingGameApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Domain/obj/Debug/net9.0/GuessingGameApp.Domain.AssemblyInfoInputs.cache
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Domain/obj/Debug/net9.0/GuessingGameApp.Domain.AssemblyInfo.cs
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Domain/obj/Debug/net9.0/GuessingGameApp.Domain.csproj.CoreCompileInputs.cache
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Domain/obj/Debug/net9.0/GuessingGameApp.Domain.sourcelink.json
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Domain/obj/Debug/net9.0/GuessingGameApp.Domain.dll
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Domain/obj/Debug/net9.0/refint/GuessingGameApp.Domain.dll
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Domain/obj/Debug/net9.0/GuessingGameApp.Domain.pdb
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Domain/obj/Debug/net9.0/ref/GuessingGameApp.Domain.dll

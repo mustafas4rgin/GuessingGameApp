@@ -15,7 +15,7 @@ public class GuessingGameDbContext : DbContext
     public DbSet<User> Users { get; set; }
     public DbSet<UserGameRel> UserGameRels { get; set; }
     public DbSet<UserRole> UserRoles { get; set; }
-
+    public DbSet<ErrorLog> ErrorLogs { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(GuessingGameDbContext).Assembly);

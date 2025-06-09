@@ -1,0 +1,16 @@
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/bin/Debug/net9.0/GuessingGameApp.Application.deps.json
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/bin/Debug/net9.0/GuessingGameApp.Application.dll
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/bin/Debug/net9.0/GuessingGameApp.Application.pdb
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/bin/Debug/net9.0/GuessingGameApp.Domain.dll
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/bin/Debug/net9.0/GuessingGameApp.Domain.pdb
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/obj/Debug/net9.0/GuessingGameApp.Application.csproj.AssemblyReference.cache
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/obj/Debug/net9.0/GuessingGameApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/obj/Debug/net9.0/GuessingGameApp.Application.AssemblyInfoInputs.cache
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/obj/Debug/net9.0/GuessingGameApp.Application.AssemblyInfo.cs
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/obj/Debug/net9.0/GuessingGameApp.Application.csproj.CoreCompileInputs.cache
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/obj/Debug/net9.0/GuessingGameApp.Application.sourcelink.json
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/obj/Debug/net9.0/Guessing.A0CA5A61.Up2Date
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/obj/Debug/net9.0/GuessingGameApp.Application.dll
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/obj/Debug/net9.0/refint/GuessingGameApp.Application.dll
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/obj/Debug/net9.0/GuessingGameApp.Application.pdb
+/Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.Application/obj/Debug/net9.0/ref/GuessingGameApp.Application.dll

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GuessingGameApp.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8ab14f9ededb538fa0c20d3c1a27d4986c1e718")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7076733c9f55321ea31d679ba3016c02044ed56")]
 [assembly: System.Reflection.AssemblyProductAttribute("GuessingGameApp.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GuessingGameApp.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

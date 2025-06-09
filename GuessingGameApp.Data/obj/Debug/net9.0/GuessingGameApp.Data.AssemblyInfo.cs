@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GuessingGameApp.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe3b81d63ae6d577fa896d531d88b62ebfb5fe1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7076733c9f55321ea31d679ba3016c02044ed56")]
 [assembly: System.Reflection.AssemblyProductAttribute("GuessingGameApp.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GuessingGameApp.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

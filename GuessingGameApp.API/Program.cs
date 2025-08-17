@@ -4,6 +4,7 @@ using GuessingGameApp.Data.Contexts;
 using GuessingGameApp.Data.Registrations;
 using InventoryApp.API.Swagger;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
@@ -63,6 +64,7 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddBusinessService();
 builder.Services.AddDataServices(builder.Configuration);
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 

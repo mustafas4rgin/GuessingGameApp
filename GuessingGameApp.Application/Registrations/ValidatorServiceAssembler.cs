@@ -8,7 +8,8 @@ public static class ValidatorServiceAssembler
     public static IServiceCollection AssembleValidators(this IServiceCollection services)
     {
         services.AddEntityValidators();
-
+        services.AddDtoValidators();
+        
         return services;
     }
 }

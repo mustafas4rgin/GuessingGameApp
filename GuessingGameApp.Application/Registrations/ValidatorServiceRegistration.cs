@@ -13,6 +13,15 @@ public static class ValidatorServiceRegistration
         foreach (var assemblyType in entityValidatorAssemblies)
             services.AddValidatorsFromAssemblyContaining(assemblyType);
 
-        return services; 
+        return services;
+    }
+    public static IServiceCollection AddDtoValidators(this IServiceCollection services)
+    {
+        var dtoValidatorAssemblies = DtoValidatorAssemblyProvider.GetValidatorAssemblies();
+
+        foreach (var assemblyType in dtoValidatorAssemblies)
+            services.AddValidatorsFromAssemblyContaining(assemblyType);
+
+        return services;
     }
 }

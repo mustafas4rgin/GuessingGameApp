@@ -5,10 +5,11 @@ using GuessingGameApp.Application.DTOs.List;
 using GuessingGameApp.Application.DTOs.Update;
 using GuessingGameApp.Application.Interfaces;
 using GuessingGameApp.Domain.Entities;
+using GuessingGameApp.Domain.Parameters;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MyApp.Namespace
+namespace GuessingGameApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -16,19 +17,47 @@ namespace MyApp.Namespace
     {
         private readonly IRoleService _roleService;
         private readonly IMapper _mapper;
-        private readonly IValidator<CreateRoleDTO> _createValidator;
-        private readonly IValidator<UpdateRoleDTO> _updateValidator;
         public RoleController(
             IRoleService roleService,
             IValidator<CreateRoleDTO> createValidator,
             IValidator<UpdateRoleDTO> updateValidator,
             IMapper mapper
-        ) : base(roleService,mapper,createValidator,updateValidator)
+        ) : base(roleService, mapper, createValidator, updateValidator)
         {
             _mapper = mapper;
-            _createValidator = createValidator;
-            _updateValidator = updateValidator;
             _roleService = roleService;
+        }
+        [HttpGet("with-includes")]
+        public async Task<IActionResult> GetRolesWithIncludesAsync([FromQuery] QueryParameters param)
+        {
+            var result = await _roleService.GetRolesWithIncludesAsync(param);
+
+            var errorResponse = HandleServiceResult(result);
+
+            if (errorResponse != null)
+                return errorResponse;
+
+            var roles = result.Data;
+
+            var dto = _mapper.Map<IEnumerable<RoleDTO>>(roles);
+
+            return Ok(dto);
+        }
+        [HttpGet("with-includes/{id:int}")]
+        public async Task<IActionResult> GetRoleByIdWithIncludesAsync([FromRoute] int id, [FromQuery] IncludeParameters param)
+        {
+            var result = await _roleService.GetRoleByIdWithIncludesAsync(id, param);
+
+            var errorResponse = HandleServiceResult(result);
+
+            if (errorResponse != null)
+                return errorResponse;
+
+            var role = result.Data;
+
+            var dto = _mapper.Map<RoleDTO>(role);
+
+            return Ok(dto);
         }
     }
 }

@@ -1,7 +1,7 @@
 using FluentValidation;
 using GuessingGameApp.Application.Interfaces;
 using GuessingGameApp.Domain.Contracts;
-using GuessingGameApp.Domain.Query;
+using GuessingGameApp.Domain.Parameters;
 using GuessingGameApp.Domain.Results.Raw;
 using GuessingGameApp.Domain.Results.Service.WithData;
 using Microsoft.EntityFrameworkCore;

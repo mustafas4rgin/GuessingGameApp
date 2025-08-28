@@ -3,11 +3,11 @@ using FluentValidation;
 using GuessingGameApp.API.Controllers;
 using GuessingGameApp.Application.Interfaces;
 using GuessingGameApp.Domain.Contracts;
-using GuessingGameApp.Domain.Query;
+using GuessingGameApp.Domain.Parameters;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MyApp.Namespace
+namespace GuessingGameApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

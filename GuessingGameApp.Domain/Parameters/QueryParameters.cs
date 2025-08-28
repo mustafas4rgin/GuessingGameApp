@@ -1,4 +1,4 @@
-namespace GuessingGameApp.Domain.Query;
+namespace GuessingGameApp.Domain.Parameters;
 
 public class QueryParameters
 {

@@ -1,0 +1,343 @@
+2025-08-28 18:13:45.518 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-28 18:13:45.637 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-28 18:13:45.640 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-28 18:13:45.640 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-28 18:13:45.641 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-28 18:13:45.642 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-28 18:13:45.742 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__oneMonthAgo_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedAt", e."DeletedAt", e."IsDeleted", e."Message", e."Method", e."Path", e."StatusCode", e."Timestamp", e."Title", e."UpdatedAt", e."UserAgent"
+FROM "ErrorLogs" AS e
+WHERE e."CreatedAt" < @__oneMonthAgo_0
+2025-08-28 18:13:45.766 +03:00 [INF] Now listening on: http://localhost:5165
+2025-08-28 18:13:45.766 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-28 18:13:45.766 +03:00 [INF] Hosting environment: Development
+2025-08-28 18:13:45.766 +03:00 [INF] Content root path: /Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.API
+2025-08-28 18:13:52.088 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/apple-touch-icon-precomposed.png - null null
+2025-08-28 18:13:52.111 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-28 18:13:52.128 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/apple-touch-icon-precomposed.png - 404 0 null 40.0147ms
+2025-08-28 18:13:52.132 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5165/apple-touch-icon-precomposed.png, Response status code: 404
+2025-08-28 18:13:52.133 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/apple-touch-icon.png - null null
+2025-08-28 18:13:52.137 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/apple-touch-icon.png - 404 0 null 4.427ms
+2025-08-28 18:13:52.138 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5165/apple-touch-icon.png, Response status code: 404
+2025-08-28 18:13:53.197 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - null null
+2025-08-28 18:13:53.250 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 null text/html;charset=utf-8 52.5556ms
+2025-08-28 18:13:53.254 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/swagger-ui-bundle.js - null null
+2025-08-28 18:13:53.256 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.js - null null
+2025-08-28 18:13:53.256 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.css - null null
+2025-08-28 18:13:53.256 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/swagger-ui.css - null null
+2025-08-28 18:13:53.256 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/swagger-ui-standalone-preset.js - null null
+2025-08-28 18:13:53.257 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.js - 200 null application/javascript;charset=utf-8 0.849ms
+2025-08-28 18:13:53.260 +03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-08-28 18:13:53.261 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.css - 200 202 text/css 4.696ms
+2025-08-28 18:13:53.263 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-08-28 18:13:53.263 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-08-28 18:13:53.265 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/swagger-ui.css - 200 154949 text/css 8.5141ms
+2025-08-28 18:13:53.265 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 8.4587ms
+2025-08-28 18:13:53.267 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-08-28 18:13:53.268 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/swagger-ui-bundle.js - 200 1484234 text/javascript 14.0848ms
+2025-08-28 18:13:53.377 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/favicon-16x16.png - null null
+2025-08-28 18:13:53.377 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/favicon-32x32.png - null null
+2025-08-28 18:13:53.378 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-08-28 18:13:53.378 +03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-08-28 18:13:53.378 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/favicon-32x32.png - 200 628 image/png 0.5586ms
+2025-08-28 18:13:53.378 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/favicon-16x16.png - 200 665 image/png 0.6971ms
+2025-08-28 18:13:53.390 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - null null
+2025-08-28 18:13:53.434 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.1563ms
+2025-08-28 18:14:00.360 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/api/Role/with-includes - null null
+2025-08-28 18:14:00.364 +03:00 [INF] Executing endpoint 'MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:00.391 +03:00 [INF] Route matched with {action = "GetRolesWithIncludes", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRolesWithIncludesAsync(GuessingGameApp.Domain.Parameters.QueryParameters) on controller MyApp.Namespace.RoleController (GuessingGameApp.API).
+2025-08-28 18:14:00.533 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."DeletedAt", r."IsDeleted", r."Name", r."UpdatedAt"
+FROM "Roles" AS r
+WHERE NOT (r."IsDeleted")
+2025-08-28 18:14:00.544 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GuessingGameApp.Application.DTOs.List.RoleDTO, GuessingGameApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-28 18:14:00.547 +03:00 [INF] Executed action MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API) in 155.2572ms
+2025-08-28 18:14:00.547 +03:00 [INF] Executed endpoint 'MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:00.549 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/api/Role/with-includes - 200 null application/json; charset=utf-8 188.418ms
+2025-08-28 18:14:06.824 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/api/Role/with-includes?Search=D - null null
+2025-08-28 18:14:06.829 +03:00 [INF] Executing endpoint 'MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:06.829 +03:00 [INF] Route matched with {action = "GetRolesWithIncludes", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRolesWithIncludesAsync(GuessingGameApp.Domain.Parameters.QueryParameters) on controller MyApp.Namespace.RoleController (GuessingGameApp.API).
+2025-08-28 18:14:06.888 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__s_0_contains='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."DeletedAt", r."IsDeleted", r."Name", r."UpdatedAt"
+FROM "Roles" AS r
+WHERE NOT (r."IsDeleted") AND lower(r."Name") LIKE @__s_0_contains
+2025-08-28 18:14:06.889 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GuessingGameApp.Application.DTOs.List.RoleDTO, GuessingGameApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-28 18:14:06.889 +03:00 [INF] Executed action MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API) in 59.8375ms
+2025-08-28 18:14:06.889 +03:00 [INF] Executed endpoint 'MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:06.889 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/api/Role/with-includes?Search=D - 200 null application/json; charset=utf-8 64.9718ms
+2025-08-28 18:14:13.364 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/api/Role/with-includes?Search=dddd - null null
+2025-08-28 18:14:13.365 +03:00 [INF] Executing endpoint 'MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:13.365 +03:00 [INF] Route matched with {action = "GetRolesWithIncludes", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRolesWithIncludesAsync(GuessingGameApp.Domain.Parameters.QueryParameters) on controller MyApp.Namespace.RoleController (GuessingGameApp.API).
+2025-08-28 18:14:13.375 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__s_0_contains='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."DeletedAt", r."IsDeleted", r."Name", r."UpdatedAt"
+FROM "Roles" AS r
+WHERE NOT (r."IsDeleted") AND lower(r."Name") LIKE @__s_0_contains
+2025-08-28 18:14:13.376 +03:00 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-28 18:14:13.380 +03:00 [INF] Executed action MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API) in 15.2096ms
+2025-08-28 18:14:13.381 +03:00 [INF] Executed endpoint 'MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:13.381 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/api/Role/with-includes?Search=dddd - 404 null application/json; charset=utf-8 16.5336ms
+2025-08-28 18:14:19.116 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/api/Role/with-includes - null null
+2025-08-28 18:14:19.117 +03:00 [INF] Executing endpoint 'MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:19.118 +03:00 [INF] Route matched with {action = "GetRolesWithIncludes", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRolesWithIncludesAsync(GuessingGameApp.Domain.Parameters.QueryParameters) on controller MyApp.Namespace.RoleController (GuessingGameApp.API).
+2025-08-28 18:14:19.128 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."DeletedAt", r."IsDeleted", r."Name", r."UpdatedAt"
+FROM "Roles" AS r
+WHERE NOT (r."IsDeleted")
+2025-08-28 18:14:19.129 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GuessingGameApp.Application.DTOs.List.RoleDTO, GuessingGameApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-28 18:14:19.129 +03:00 [INF] Executed action MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API) in 11.3382ms
+2025-08-28 18:14:19.129 +03:00 [INF] Executed endpoint 'MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:19.130 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/api/Role/with-includes - 200 null application/json; charset=utf-8 13.0958ms
+2025-08-28 18:14:24.996 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/api/Role/with-includes?Include=user - null null
+2025-08-28 18:14:24.997 +03:00 [INF] Executing endpoint 'MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:24.997 +03:00 [INF] Route matched with {action = "GetRolesWithIncludes", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRolesWithIncludesAsync(GuessingGameApp.Domain.Parameters.QueryParameters) on controller MyApp.Namespace.RoleController (GuessingGameApp.API).
+2025-08-28 18:14:25.014 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."DeletedAt", r."IsDeleted", r."Name", r."UpdatedAt"
+FROM "Roles" AS r
+WHERE NOT (r."IsDeleted")
+2025-08-28 18:14:25.015 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GuessingGameApp.Application.DTOs.List.RoleDTO, GuessingGameApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-28 18:14:25.015 +03:00 [INF] Executed action MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API) in 17.5044ms
+2025-08-28 18:14:25.015 +03:00 [INF] Executed endpoint 'MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:25.015 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/api/Role/with-includes?Include=user - 200 null application/json; charset=utf-8 19.7495ms
+2025-08-28 18:14:26.416 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/api/Role/with-includes?Include=users - null null
+2025-08-28 18:14:26.416 +03:00 [INF] Executing endpoint 'MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:26.416 +03:00 [INF] Route matched with {action = "GetRolesWithIncludes", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRolesWithIncludesAsync(GuessingGameApp.Domain.Parameters.QueryParameters) on controller MyApp.Namespace.RoleController (GuessingGameApp.API).
+2025-08-28 18:14:26.421 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."DeletedAt", r."IsDeleted", r."Name", r."UpdatedAt"
+FROM "Roles" AS r
+WHERE NOT (r."IsDeleted")
+2025-08-28 18:14:26.422 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GuessingGameApp.Application.DTOs.List.RoleDTO, GuessingGameApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-28 18:14:26.422 +03:00 [INF] Executed action MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API) in 5.339ms
+2025-08-28 18:14:26.422 +03:00 [INF] Executed endpoint 'MyApp.Namespace.RoleController.GetRolesWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:26.422 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/api/Role/with-includes?Include=users - 200 null application/json; charset=utf-8 6.74ms
+2025-08-28 18:14:35.548 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/api/Role/with-includes/1 - null null
+2025-08-28 18:14:35.549 +03:00 [INF] Executing endpoint 'MyApp.Namespace.RoleController.GetRoleByIdWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:35.556 +03:00 [INF] Route matched with {action = "GetRoleByIdWithIncludes", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRoleByIdWithIncludesAsync(Int32, GuessingGameApp.Domain.Parameters.IncludeParameters) on controller MyApp.Namespace.RoleController (GuessingGameApp.API).
+2025-08-28 18:14:35.581 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."DeletedAt", r."IsDeleted", r."Name", r."UpdatedAt"
+FROM "Roles" AS r
+WHERE NOT (r."IsDeleted") AND r."Id" = @__id_0
+LIMIT 1
+2025-08-28 18:14:35.607 +03:00 [INF] Executing OkObjectResult, writing value of type 'GuessingGameApp.Application.DTOs.List.RoleDTO'.
+2025-08-28 18:14:35.607 +03:00 [INF] Executed action MyApp.Namespace.RoleController.GetRoleByIdWithIncludesAsync (GuessingGameApp.API) in 51.4169ms
+2025-08-28 18:14:35.608 +03:00 [INF] Executed endpoint 'MyApp.Namespace.RoleController.GetRoleByIdWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:35.608 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/api/Role/with-includes/1 - 200 null application/json; charset=utf-8 59.7221ms
+2025-08-28 18:14:40.445 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/api/Role/with-includes/1?Include=users - null null
+2025-08-28 18:14:40.445 +03:00 [INF] Executing endpoint 'MyApp.Namespace.RoleController.GetRoleByIdWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:40.445 +03:00 [INF] Route matched with {action = "GetRoleByIdWithIncludes", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRoleByIdWithIncludesAsync(Int32, GuessingGameApp.Domain.Parameters.IncludeParameters) on controller MyApp.Namespace.RoleController (GuessingGameApp.API).
+2025-08-28 18:14:40.449 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."DeletedAt", r."IsDeleted", r."Name", r."UpdatedAt"
+FROM "Roles" AS r
+WHERE NOT (r."IsDeleted") AND r."Id" = @__id_0
+LIMIT 1
+2025-08-28 18:14:40.450 +03:00 [INF] Executing OkObjectResult, writing value of type 'GuessingGameApp.Application.DTOs.List.RoleDTO'.
+2025-08-28 18:14:40.450 +03:00 [INF] Executed action MyApp.Namespace.RoleController.GetRoleByIdWithIncludesAsync (GuessingGameApp.API) in 4.7948ms
+2025-08-28 18:14:40.450 +03:00 [INF] Executed endpoint 'MyApp.Namespace.RoleController.GetRoleByIdWithIncludesAsync (GuessingGameApp.API)'
+2025-08-28 18:14:40.451 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/api/Role/with-includes/1?Include=users - 200 null application/json; charset=utf-8 6.1257ms
+2025-08-28 18:22:02.549 +03:00 [INF] Application is shutting down...
+2025-08-28 18:32:39.703 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-28 18:32:39.830 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-28 18:32:39.833 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-28 18:32:39.833 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-28 18:32:39.834 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-28 18:32:39.835 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-28 18:32:39.938 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__oneMonthAgo_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedAt", e."DeletedAt", e."IsDeleted", e."Message", e."Method", e."Path", e."StatusCode", e."Timestamp", e."Title", e."UpdatedAt", e."UserAgent"
+FROM "ErrorLogs" AS e
+WHERE e."CreatedAt" < @__oneMonthAgo_0
+2025-08-28 18:32:39.959 +03:00 [INF] Now listening on: http://localhost:5165
+2025-08-28 18:32:39.960 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-28 18:32:39.960 +03:00 [INF] Hosting environment: Development
+2025-08-28 18:32:39.960 +03:00 [INF] Content root path: /Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.API
+2025-08-28 18:32:43.993 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - null null
+2025-08-28 18:32:44.010 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-28 18:32:44.074 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.0112ms
+2025-08-28 18:32:48.360 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/api/Game/GetAll - null null
+2025-08-28 18:32:48.373 +03:00 [INF] Executing endpoint 'MyApp.Namespace.GameController.GetAllAsync (GuessingGameApp.API)'
+2025-08-28 18:32:48.392 +03:00 [INF] Route matched with {action = "GetAll", controller = "Game"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync(GuessingGameApp.Domain.Parameters.QueryParameters) on controller MyApp.Namespace.GameController (GuessingGameApp.API).
+2025-08-28 18:32:48.395 +03:00 [INF] Executed action MyApp.Namespace.GameController.GetAllAsync (GuessingGameApp.API) in 1.3616ms
+2025-08-28 18:32:48.396 +03:00 [INF] Executed endpoint 'MyApp.Namespace.GameController.GetAllAsync (GuessingGameApp.API)'
+2025-08-28 18:32:48.396 +03:00 [ERR] An unhandled exception occurred.
+System.InvalidOperationException: Unable to resolve service for type 'GuessingGameApp.Application.Interfaces.IGameService' while attempting to activate 'MyApp.Namespace.GameController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method30(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GuessingGameApp.API.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in /Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.API/Middlewares/GlobalExceptionMiddleware.cs:line 26
+2025-08-28 18:32:48.491 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (DbType = Boolean), @p3='?', @p4='?', @p5='?', @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?', @p9='?' (DbType = DateTime), @p10='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ErrorLogs" ("CreatedAt", "DeletedAt", "IsDeleted", "Message", "Method", "Path", "StatusCode", "Timestamp", "Title", "UpdatedAt", "UserAgent")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10)
+RETURNING "Id";
+2025-08-28 18:32:48.503 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/api/Game/GetAll - 500 null application/json 143.3875ms
+2025-08-28 18:32:56.306 +03:00 [INF] Application is shutting down...
+2025-08-28 18:34:09.155 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-28 18:34:09.281 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-28 18:34:09.284 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-28 18:34:09.284 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-28 18:34:09.285 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-28 18:34:09.286 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-28 18:34:09.390 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__oneMonthAgo_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedAt", e."DeletedAt", e."IsDeleted", e."Message", e."Method", e."Path", e."StatusCode", e."Timestamp", e."Title", e."UpdatedAt", e."UserAgent"
+FROM "ErrorLogs" AS e
+WHERE e."CreatedAt" < @__oneMonthAgo_0
+2025-08-28 18:34:09.413 +03:00 [INF] Now listening on: http://localhost:5165
+2025-08-28 18:34:09.413 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-28 18:34:09.414 +03:00 [INF] Hosting environment: Development
+2025-08-28 18:34:09.414 +03:00 [INF] Content root path: /Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.API
+2025-08-28 18:34:11.993 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/api/Game/GetAll - null null
+2025-08-28 18:34:12.005 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-28 18:34:12.022 +03:00 [INF] Executing endpoint 'MyApp.Namespace.GameController.GetAllAsync (GuessingGameApp.API)'
+2025-08-28 18:34:12.032 +03:00 [INF] Route matched with {action = "GetAll", controller = "Game"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync(GuessingGameApp.Domain.Parameters.QueryParameters) on controller MyApp.Namespace.GameController (GuessingGameApp.API).
+2025-08-28 18:34:12.114 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT g."Id", g."CreatedAt", g."DeletedAt", g."Developer", g."Genre", g."IsDeleted", g."MetaScore", g."Name", g."OriginalPlatform", g."Release", g."UpdatedAt"
+FROM "Games" AS g
+WHERE NOT (g."IsDeleted")
+2025-08-28 18:34:12.118 +03:00 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-28 18:34:12.124 +03:00 [INF] Executed action MyApp.Namespace.GameController.GetAllAsync (GuessingGameApp.API) in 90.6756ms
+2025-08-28 18:34:12.126 +03:00 [INF] Executed endpoint 'MyApp.Namespace.GameController.GetAllAsync (GuessingGameApp.API)'
+2025-08-28 18:34:12.128 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/api/Game/GetAll - 404 null application/json; charset=utf-8 136.3881ms
+2025-08-28 18:35:28.058 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5165/api/Game/Add - application/json 185
+2025-08-28 18:35:28.070 +03:00 [INF] Executing endpoint 'MyApp.Namespace.GameController.AddAsync (GuessingGameApp.API)'
+2025-08-28 18:35:28.080 +03:00 [INF] Route matched with {action = "Add", controller = "Game"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddAsync(GuessingGameApp.Application.DTOs.Create.CreateGameDTO) on controller MyApp.Namespace.GameController (GuessingGameApp.API).
+2025-08-28 18:35:28.106 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FluentValidation.Results.ValidationFailure, FluentValidation, Version=12.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0],[<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], GuessingGameApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-28 18:35:28.108 +03:00 [INF] Executed action MyApp.Namespace.GameController.AddAsync (GuessingGameApp.API) in 27.9533ms
+2025-08-28 18:35:28.108 +03:00 [INF] Executed endpoint 'MyApp.Namespace.GameController.AddAsync (GuessingGameApp.API)'
+2025-08-28 18:35:28.109 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5165/api/Game/Add - 400 null application/json; charset=utf-8 50.7404ms
+2025-08-28 18:35:38.145 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5165/api/Game/Add - application/json 176
+2025-08-28 18:35:38.149 +03:00 [INF] Executing endpoint 'MyApp.Namespace.GameController.AddAsync (GuessingGameApp.API)'
+2025-08-28 18:35:38.149 +03:00 [INF] Route matched with {action = "Add", controller = "Game"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddAsync(GuessingGameApp.Application.DTOs.Create.CreateGameDTO) on controller MyApp.Namespace.GameController (GuessingGameApp.API).
+2025-08-28 18:35:38.172 +03:00 [INF] Executed action MyApp.Namespace.GameController.AddAsync (GuessingGameApp.API) in 22.553ms
+2025-08-28 18:35:38.172 +03:00 [INF] Executed endpoint 'MyApp.Namespace.GameController.AddAsync (GuessingGameApp.API)'
+2025-08-28 18:35:38.172 +03:00 [ERR] An unhandled exception occurred.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateGameDTO -> Game
+GuessingGameApp.Application.DTOs.Create.CreateGameDTO -> GuessingGameApp.Domain.Entities.Game
+   at lambda_method69(Closure, Object, Game, ResolutionContext)
+   at GuessingGameApp.API.Controllers.GenericController`4.AddAsync(TCreateDto dto)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GuessingGameApp.API.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in /Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.API/Middlewares/GlobalExceptionMiddleware.cs:line 26
+2025-08-28 18:35:38.279 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (DbType = Boolean), @p3='?', @p4='?', @p5='?', @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?', @p9='?' (DbType = DateTime), @p10='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ErrorLogs" ("CreatedAt", "DeletedAt", "IsDeleted", "Message", "Method", "Path", "StatusCode", "Timestamp", "Title", "UpdatedAt", "UserAgent")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10)
+RETURNING "Id";
+2025-08-28 18:35:38.290 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5165/api/Game/Add - 500 null application/json 144.9733ms
+2025-08-28 18:37:48.603 +03:00 [INF] Application is shutting down...
+2025-08-28 18:37:52.704 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-28 18:37:52.823 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-28 18:37:52.826 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-28 18:37:52.826 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-28 18:37:52.827 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-28 18:37:52.828 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-28 18:37:52.930 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__oneMonthAgo_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedAt", e."DeletedAt", e."IsDeleted", e."Message", e."Method", e."Path", e."StatusCode", e."Timestamp", e."Title", e."UpdatedAt", e."UserAgent"
+FROM "ErrorLogs" AS e
+WHERE e."CreatedAt" < @__oneMonthAgo_0
+2025-08-28 18:37:52.952 +03:00 [INF] Now listening on: http://localhost:5165
+2025-08-28 18:37:52.952 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-28 18:37:52.953 +03:00 [INF] Hosting environment: Development
+2025-08-28 18:37:52.953 +03:00 [INF] Content root path: /Users/s4rgin/Desktop/Projects/GuessingGameApp/GuessingGameApp.API
+2025-08-28 18:37:55.943 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5165/api/Game/Add - application/json 176
+2025-08-28 18:37:55.955 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-28 18:37:55.965 +03:00 [INF] Executing endpoint 'MyApp.Namespace.GameController.AddAsync (GuessingGameApp.API)'
+2025-08-28 18:37:55.973 +03:00 [INF] Route matched with {action = "Add", controller = "Game"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddAsync(GuessingGameApp.Application.DTOs.Create.CreateGameDTO) on controller MyApp.Namespace.GameController (GuessingGameApp.API).
+2025-08-28 18:37:56.101 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?', @p8='?', @p9='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Games" ("CreatedAt", "DeletedAt", "Developer", "Genre", "IsDeleted", "MetaScore", "Name", "OriginalPlatform", "Release", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Id";
+2025-08-28 18:37:56.109 +03:00 [INF] Entity with ID 1 added successfully.
+2025-08-28 18:37:56.111 +03:00 [INF] Executing OkObjectResult, writing value of type 'GuessingGameApp.Domain.Results.Raw.SuccessResult'.
+2025-08-28 18:37:56.115 +03:00 [INF] Executed action MyApp.Namespace.GameController.AddAsync (GuessingGameApp.API) in 140.1287ms
+2025-08-28 18:37:56.117 +03:00 [INF] Executed endpoint 'MyApp.Namespace.GameController.AddAsync (GuessingGameApp.API)'
+2025-08-28 18:37:56.119 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5165/api/Game/Add - 200 null application/json; charset=utf-8 176.7973ms
+2025-08-28 18:38:00.462 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/api/Game/GetAll - null null
+2025-08-28 18:38:00.471 +03:00 [INF] Executing endpoint 'MyApp.Namespace.GameController.GetAllAsync (GuessingGameApp.API)'
+2025-08-28 18:38:00.480 +03:00 [INF] Route matched with {action = "GetAll", controller = "Game"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync(GuessingGameApp.Domain.Parameters.QueryParameters) on controller MyApp.Namespace.GameController (GuessingGameApp.API).
+2025-08-28 18:38:00.507 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT g."Id", g."CreatedAt", g."DeletedAt", g."Developer", g."Genre", g."IsDeleted", g."MetaScore", g."Name", g."OriginalPlatform", g."Release", g."UpdatedAt"
+FROM "Games" AS g
+WHERE NOT (g."IsDeleted")
+2025-08-28 18:38:00.515 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GuessingGameApp.Application.DTOs.List.GameDTO, GuessingGameApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-28 18:38:00.516 +03:00 [INF] Executed action MyApp.Namespace.GameController.GetAllAsync (GuessingGameApp.API) in 35.7925ms
+2025-08-28 18:38:00.516 +03:00 [INF] Executed endpoint 'MyApp.Namespace.GameController.GetAllAsync (GuessingGameApp.API)'
+2025-08-28 18:38:00.516 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/api/Game/GetAll - 200 null application/json; charset=utf-8 54.7677ms
+2025-08-28 18:40:05.519 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5165/api/Game/GetAll - null null
+2025-08-28 18:40:05.525 +03:00 [INF] Executing endpoint 'MyApp.Namespace.GameController.GetAllAsync (GuessingGameApp.API)'
+2025-08-28 18:40:05.527 +03:00 [INF] Route matched with {action = "GetAll", controller = "Game"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync(GuessingGameApp.Domain.Parameters.QueryParameters) on controller MyApp.Namespace.GameController (GuessingGameApp.API).
+2025-08-28 18:40:05.551 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT g."Id", g."CreatedAt", g."DeletedAt", g."Developer", g."Genre", g."IsDeleted", g."MetaScore", g."Name", g."OriginalPlatform", g."Release", g."UpdatedAt"
+FROM "Games" AS g
+WHERE NOT (g."IsDeleted")
+2025-08-28 18:40:05.555 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GuessingGameApp.Application.DTOs.List.GameDTO, GuessingGameApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-28 18:40:05.556 +03:00 [INF] Executed action MyApp.Namespace.GameController.GetAllAsync (GuessingGameApp.API) in 29.0447ms
+2025-08-28 18:40:05.556 +03:00 [INF] Executed endpoint 'MyApp.Namespace.GameController.GetAllAsync (GuessingGameApp.API)'
+2025-08-28 18:40:05.557 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5165/api/Game/GetAll - 200 null application/json; charset=utf-8 38.149ms
+2025-08-28 18:41:04.960 +03:00 [INF] Application is shutting down...
